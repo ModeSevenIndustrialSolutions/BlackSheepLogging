@@ -61,7 +61,8 @@ open class BlackSheepLogging {
 
     /// returns the current thread name
     open class func threadName() -> String {
-
+        return ""
+/*
         #if os(Linux)
             // on 9/30/2016 not yet implemented in server-side Swift:
             // > import Foundation
@@ -77,6 +78,7 @@ open class BlackSheepLogging {
                 // Thread.current.description
             }
         #endif
+ */
     }
 
     // MARK: Levels
