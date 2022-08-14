@@ -1,5 +1,5 @@
 import XCTest
-@testable import SwiftyBeaverTests
+@testable import BlackSheepLoggingTests
 
 XCTMain([
     testCase(AES256CBCTests.allTests), // takes too long
@@ -8,7 +8,7 @@ XCTMain([
     testCase(ConsoleDestinationTests.allTests),
     //testCase(FileDestinationTests.allTests),
     //testCase(SBPlatformDestinationTests.allTests),
-    testCase(SwiftyBeaverTests.allTests),
+    testCase(BlackSheepLoggingTests.allTests),
     //testCase(GoogleCloudDestinationTests.allTests)
 ])
 
@@ -24,6 +24,6 @@ XCTMain([
  testCase(DestinationSetTests.allTests),
  testCase(FileDestinationTests.allTests),
  testCase(SBPlatformDestinationTests.allTests),
- testCase(SwiftyBeaverTests.allTests),
+ testCase(BlackSheepLoggingTests.allTests),
  
  */

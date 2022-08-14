@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		"SwiftyBeaver::SwiftyBeaverPackageTests::ProductTarget" /* BlackSheepLoggingPackageTests */ = {
+		"BlackSheepLogging::BlackSheepLoggingPackageTests::ProductTarget" /* BlackSheepLoggingPackageTests */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = OBJ_64 /* Build configuration list for PBXAggregateTarget "BlackSheepLoggingPackageTests" */;
 			buildPhases = (
@@ -16,7 +16,7 @@
 				OBJ_67 /* PBXTargetDependency */,
 			);
 			name = BlackSheepLoggingPackageTests;
-			productName = SwiftyBeaverPackageTests;
+			productName = BlackSheepLoggingPackageTests;
 		};
 /* End PBXAggregateTarget section */
 
@@ -43,7 +43,7 @@
 		OBJ_80 /* SBPlatformDestinationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* SBPlatformDestinationTests.swift */; };
 		OBJ_81 /* SecretsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* SecretsExample.swift */; };
 		OBJ_82 /* BlackSheepLoggingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* BlackSheepLoggingTests.swift */; };
-		OBJ_84 /* BlackSheepLogging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftyBeaver::SwiftyBeaver::Product" /* BlackSheepLogging.framework */; };
+		OBJ_84 /* BlackSheepLogging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "BlackSheepLogging::BlackSheepLogging::Product" /* BlackSheepLogging.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,15 +51,15 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = "SwiftyBeaver::SwiftyBeaver";
-			remoteInfo = SwiftyBeaver;
+			remoteGlobalIDString = "BlackSheepLogging::BlackSheepLogging";
+			remoteInfo = BlackSheepLogging;
 		};
 		4DA3E2F2233F2D4D006A7285 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = "SwiftyBeaver::SwiftyBeaverTests";
-			remoteInfo = SwiftyBeaverTests;
+			remoteGlobalIDString = "BlackSheepLogging::BlackSheepLoggingTests";
+			remoteInfo = BlackSheepLoggingTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -92,8 +92,8 @@
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_8 /* AES256CBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256CBC.swift; sourceTree = "<group>"; };
 		OBJ_9 /* Base64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base64.swift; sourceTree = "<group>"; };
-		"SwiftyBeaver::SwiftyBeaver::Product" /* BlackSheepLogging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BlackSheepLogging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"SwiftyBeaver::SwiftyBeaverTests::Product" /* BlackSheepLoggingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = BlackSheepLoggingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"BlackSheepLogging::BlackSheepLogging::Product" /* BlackSheepLogging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BlackSheepLogging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"BlackSheepLogging::BlackSheepLoggingTests::Product" /* BlackSheepLoggingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = BlackSheepLoggingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,8 +144,8 @@
 		OBJ_31 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				"SwiftyBeaver::SwiftyBeaverTests::Product" /* BlackSheepLoggingTests.xctest */,
-				"SwiftyBeaver::SwiftyBeaver::Product" /* BlackSheepLogging.framework */,
+				"BlackSheepLogging::BlackSheepLoggingTests::Product" /* BlackSheepLoggingTests.xctest */,
+				"BlackSheepLogging::BlackSheepLogging::Product" /* BlackSheepLogging.framework */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -187,7 +187,7 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		"SwiftyBeaver::SwiftPMPackageDescription" /* BlackSheepLoggingPackageDescription */ = {
+		"BlackSheepLogging::SwiftPMPackageDescription" /* BlackSheepLoggingPackageDescription */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_58 /* Build configuration list for PBXNativeTarget "BlackSheepLoggingPackageDescription" */;
 			buildPhases = (
@@ -198,10 +198,10 @@
 			dependencies = (
 			);
 			name = BlackSheepLoggingPackageDescription;
-			productName = SwiftyBeaverPackageDescription;
+			productName = BlackSheepLoggingPackageDescription;
 			productType = "com.apple.product-type.framework";
 		};
-		"SwiftyBeaver::SwiftyBeaver" /* BlackSheepLogging */ = {
+		"BlackSheepLogging::BlackSheepLogging" /* BlackSheepLogging */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_41 /* Build configuration list for PBXNativeTarget "BlackSheepLogging" */;
 			buildPhases = (
@@ -213,11 +213,11 @@
 			dependencies = (
 			);
 			name = BlackSheepLogging;
-			productName = SwiftyBeaver;
-			productReference = "SwiftyBeaver::SwiftyBeaver::Product" /* BlackSheepLogging.framework */;
+			productName = BlackSheepLogging;
+			productReference = "BlackSheepLogging::BlackSheepLogging::Product" /* BlackSheepLogging.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		"SwiftyBeaver::SwiftyBeaverTests" /* BlackSheepLoggingTests */ = {
+		"BlackSheepLogging::BlackSheepLoggingTests" /* BlackSheepLoggingTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_69 /* Build configuration list for PBXNativeTarget "BlackSheepLoggingTests" */;
 			buildPhases = (
@@ -230,8 +230,8 @@
 				OBJ_85 /* PBXTargetDependency */,
 			);
 			name = BlackSheepLoggingTests;
-			productName = SwiftyBeaverTests;
-			productReference = "SwiftyBeaver::SwiftyBeaverTests::Product" /* BlackSheepLoggingTests.xctest */;
+			productName = BlackSheepLoggingTests;
+			productReference = "BlackSheepLogging::BlackSheepLoggingTests::Product" /* BlackSheepLoggingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -255,10 +255,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				"SwiftyBeaver::SwiftyBeaver" /* BlackSheepLogging */,
-				"SwiftyBeaver::SwiftPMPackageDescription" /* BlackSheepLoggingPackageDescription */,
-				"SwiftyBeaver::SwiftyBeaverPackageTests::ProductTarget" /* BlackSheepLoggingPackageTests */,
-				"SwiftyBeaver::SwiftyBeaverTests" /* BlackSheepLoggingTests */,
+				"BlackSheepLogging::BlackSheepLogging" /* BlackSheepLogging */,
+				"BlackSheepLogging::SwiftPMPackageDescription" /* BlackSheepLoggingPackageDescription */,
+				"BlackSheepLogging::BlackSheepLoggingPackageTests::ProductTarget" /* BlackSheepLoggingPackageTests */,
+				"BlackSheepLogging::BlackSheepLoggingTests" /* BlackSheepLoggingTests */,
 			);
 		};
 /* End PBXProject section */
@@ -312,12 +312,12 @@
 /* Begin PBXTargetDependency section */
 		OBJ_67 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = "SwiftyBeaver::SwiftyBeaverTests" /* BlackSheepLoggingTests */;
+			target = "BlackSheepLogging::BlackSheepLoggingTests" /* BlackSheepLoggingTests */;
 			targetProxy = 4DA3E2F2233F2D4D006A7285 /* PBXContainerItemProxy */;
 		};
 		OBJ_85 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = "SwiftyBeaver::SwiftyBeaver" /* BlackSheepLogging */;
+			target = "BlackSheepLogging::BlackSheepLogging" /* BlackSheepLogging */;
 			targetProxy = 4DA3E2F1233F2D4C006A7285 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -398,7 +398,7 @@
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.SwiftyBeaver.SwiftyBeaver;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BlackSheepLogging.BlackSheepLogging;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -433,7 +433,7 @@
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.SwiftyBeaver.SwiftyBeaver;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BlackSheepLogging.BlackSheepLogging;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -489,7 +489,7 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = SwiftyBeaver.xcodeproj/SwiftyBeaverTests_Info.plist;
+				INFOPLIST_FILE = BlackSheepLogging.xcodeproj/BlackSheepLoggingTests_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -503,7 +503,7 @@
 				PRODUCT_NAME = BlackSheepLoggingTests;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
-				TARGET_NAME = SwiftyBeaverTests;
+				TARGET_NAME = BlackSheepLoggingTests;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -519,7 +519,7 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = SwiftyBeaver.xcodeproj/SwiftyBeaverTests_Info.plist;
+				INFOPLIST_FILE = BlackSheepLogging.xcodeproj/BlackSheepLoggingTests_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -533,7 +533,7 @@
 				PRODUCT_NAME = BlackSheepLoggingTests;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
-				TARGET_NAME = SwiftyBeaverTests;
+				TARGET_NAME = BlackSheepLoggingTests;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};

@@ -72,7 +72,9 @@ open class BlackSheepLogging {
                 return ""
             } else {
                 let name = __dispatch_queue_get_label(nil)
-                return String(cString: name, encoding: .utf8) ?? Thread.current.description
+                return String(cString: name, encoding: .utf8) ?? String("Placeholder")
+                // Inserted placeholder string above, as Thread.current no longer works in macOS 13
+                // Thread.current.description
             }
         #endif
     }
