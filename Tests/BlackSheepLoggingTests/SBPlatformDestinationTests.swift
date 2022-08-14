@@ -1,6 +1,6 @@
 //
 //  SBPlatformDestinationTests
-//  SwiftyBeaverTests
+//  BlackSheepLoggingTests
 //
 //  Created by Sebastian Kreutzberger on 22.01.16.
 //  Copyright © 2016 Sebastian Kreutzberger
@@ -9,7 +9,7 @@
 
 import Foundation
 import XCTest
-@testable import SwiftyBeaver
+@testable import BlackSheepLogging
 
 class SBPlatformDestinationTests: XCTestCase {
 
@@ -25,7 +25,7 @@ class SBPlatformDestinationTests: XCTestCase {
             export SBPLATFORM_APP_SECRET=
             export SBPLATFORM_ENCRYPTION_KEY=
         */
-        static let serverURL = ProcessInfo.processInfo.environment["SBPLATFORM_SERVER_URL"] ?? "https://api.swiftybeaver.com/api/entries/"
+        static let serverURL = ProcessInfo.processInfo.environment["SBPLATFORM_SERVER_URL"] ?? "https://api.blacksheeplogging.com/api/entries/"
         static let appID = ProcessInfo.processInfo.environment["SBPLATFORM_APP_ID"] ?? ""
         static let appSecret = ProcessInfo.processInfo.environment["SBPLATFORM_APP_SECRET"] ?? ""
         static let encryptionKey = ProcessInfo.processInfo.environment["SBPLATFORM_ENCRYPTION_KEY"] ?? ""
@@ -33,7 +33,7 @@ class SBPlatformDestinationTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        SwiftyBeaver.removeAllDestinations()
+        BlackSheepLogging.removeAllDestinations()
         platform = SBPlatformDestination(
             appID: SBPlatformCredentials.appID,
             appSecret: SBPlatformCredentials.appSecret,
@@ -53,7 +53,7 @@ class SBPlatformDestinationTests: XCTestCase {
     }
 
     func testLoggingWithoutDestination() {
-        let log = SwiftyBeaver.self
+        let log = BlackSheepLogging.self
         // no destination was set, yet
         log.verbose("Where do I log to?")
     }
@@ -83,15 +83,15 @@ class SBPlatformDestinationTests: XCTestCase {
     }
 
     func testSendingPointsFromLevel() {
-        var points = platform.sendingPointsForLevel(SwiftyBeaver.Level.verbose)
+        var points = platform.sendingPointsForLevel(BlackSheepLogging.Level.verbose)
         XCTAssertEqual(points, platform.sendingPoints.verbose)
-        points = platform.sendingPointsForLevel(SwiftyBeaver.Level.debug)
+        points = platform.sendingPointsForLevel(BlackSheepLogging.Level.debug)
         XCTAssertEqual(points, platform.sendingPoints.debug)
-        points = platform.sendingPointsForLevel(SwiftyBeaver.Level.info)
+        points = platform.sendingPointsForLevel(BlackSheepLogging.Level.info)
         XCTAssertEqual(points, platform.sendingPoints.info)
-        points = platform.sendingPointsForLevel(SwiftyBeaver.Level.warning)
+        points = platform.sendingPointsForLevel(BlackSheepLogging.Level.warning)
         XCTAssertEqual(points, platform.sendingPoints.warning)
-        points = platform.sendingPointsForLevel(SwiftyBeaver.Level.error)
+        points = platform.sendingPointsForLevel(BlackSheepLogging.Level.error)
         XCTAssertEqual(points, platform.sendingPoints.error)
     }
 
@@ -106,7 +106,7 @@ class SBPlatformDestinationTests: XCTestCase {
         let correctURL = platform.serverURL
 
         // invalid address
-        if let serverURL = URL(string: "https://notexisting.swiftybeaver.com") {
+        if let serverURL = URL(string: "https://notexisting.blacksheeplogging.com") {
             platform.serverURL = serverURL
         }
         let exp = expectation(description: "returns false due to invalid URL")
@@ -160,9 +160,9 @@ class SBPlatformDestinationTests: XCTestCase {
     }
 
     func testSingleSending() {
-        let log = SwiftyBeaver.self
+        let log = BlackSheepLogging.self
 
-        // add logging to SwiftyBeaver Platform
+        // add logging to BlackSheepLogging Platform
         platform.showNSLog = true
         //let jsonFile = NSURL(fileURLWithPath: "/tmp/testSBPlatform.json")!
         //deleteFile(NSURL(string: String(jsonFile) + ".send")!)
@@ -198,10 +198,10 @@ class SBPlatformDestinationTests: XCTestCase {
     }
 
     func testIntegration() {
-        let log = SwiftyBeaver.self
+        let log = BlackSheepLogging.self
         let formatter = DateFormatter()
 
-        // add logging to SwiftyBeaver Platform
+        // add logging to BlackSheepLogging Platform
         platform.showNSLog = true
         //let jsonFile = NSURL(fileURLWithPath: "/tmp/testSBPlatform.json")!
         //deleteFile(NSURL(string: String(jsonFile) + ".send")!)

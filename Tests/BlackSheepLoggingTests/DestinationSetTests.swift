@@ -1,28 +1,28 @@
 //
 //  DestinationSetTests.swift
-//  SwiftyBeaver
+//  BlackSheepLogging
 //
 //  Created by Mark Schultz on 5/5/16.
 //  Copyright © 2016 Sebastian Kreutzberger. All rights reserved.
 //
 
 import XCTest
-import SwiftyBeaver
+import BlackSheepLogging
 
 class DestinationSetTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        SwiftyBeaver.removeAllDestinations()
+        BlackSheepLogging.removeAllDestinations()
     }
 
     override func tearDown() {
         super.tearDown()
-        SwiftyBeaver.removeAllDestinations()
+        BlackSheepLogging.removeAllDestinations()
     }
 
     func testChangeDestinationsMinLogLevels() {
-        let log = SwiftyBeaver.self
+        let log = BlackSheepLogging.self
 
         // Test for default state
         XCTAssertEqual(log.countDestinations(), 0)
@@ -41,7 +41,7 @@ class DestinationSetTests: XCTestCase {
 
         // Test default log level of destinations
         log.destinations.forEach {
-            XCTAssertEqual($0.minLevel, SwiftyBeaver.Level.verbose)
+            XCTAssertEqual($0.minLevel, BlackSheepLogging.Level.verbose)
         }
 
         // Change min log level for all destinations
@@ -49,12 +49,12 @@ class DestinationSetTests: XCTestCase {
 
         // Test min level of destinations has changed
         log.destinations.forEach {
-            XCTAssertEqual($0.minLevel, SwiftyBeaver.Level.info)
+            XCTAssertEqual($0.minLevel, BlackSheepLogging.Level.info)
         }
     }
 
     func testRemoveConsoleDestinations() {
-        let log = SwiftyBeaver.self
+        let log = BlackSheepLogging.self
 
         // Test for default state
         XCTAssertEqual(log.countDestinations(), 0)

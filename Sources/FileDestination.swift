@@ -1,6 +1,6 @@
 //
 //  FileDestination.swift
-//  SwiftyBeaver
+//  BlackSheepLogging
 //
 //  Created by Sebastian Kreutzberger on 05.12.15.
 //  Copyright © 2015 Sebastian Kreutzberger
@@ -86,13 +86,13 @@ open class FileDestination: BaseDestination {
         #endif
 
         if let baseURL = baseURL {
-            self.logFileURL = baseURL.appendingPathComponent("swiftybeaver.log", isDirectory: false)
+            self.logFileURL = baseURL.appendingPathComponent("blacksheeplogging.log", isDirectory: false)
         }
         super.init()
     }
 
     // append to file. uses full base class functionality
-    override open func send(_ level: SwiftyBeaver.Level, msg: String, thread: String,
+    override open func send(_ level: BlackSheepLogging.Level, msg: String, thread: String,
         file: String, function: String, line: Int, context: Any? = nil) -> String? {
         let formattedString = super.send(level, msg: msg, thread: thread, file: file, function: function, line: line, context: context)
 
@@ -205,7 +205,7 @@ open class FileDestination: BaseDestination {
                 fileHandle.closeFile()
                 success = true
             } catch {
-                print("SwiftyBeaver File Destination could not write to file \(url).")
+                print("BlackSheepLogging File Destination could not write to file \(url).")
             }
         }
 
@@ -226,7 +226,7 @@ open class FileDestination: BaseDestination {
             try fileManager.removeItem(at: url)
             return true
         } catch {
-            print("SwiftyBeaver File Destination could not remove file \(url).")
+            print("BlackSheepLogging File Destination could not remove file \(url).")
             return false
         }
     }

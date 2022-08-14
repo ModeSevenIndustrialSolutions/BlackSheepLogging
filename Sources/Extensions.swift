@@ -1,6 +1,6 @@
 //
 //  Extensions.swift
-//  SwiftyBeaver
+//  BlackSheepLogging
 //
 //  Created by Sebastian Kreutzberger on 13.12.17.
 //  Copyright © 2017 Sebastian Kreutzberger. All rights reserved.

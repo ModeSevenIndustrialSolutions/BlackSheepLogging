@@ -1,19 +1,19 @@
 //
 //  GoogleCloudDestinationTests.swift
-//  SwiftyBeaver
+//  BlackSheepLogging
 //
 //  Created by Laurent Gaches on 10/04/2017.
 //  Copyright © 2017 Sebastian Kreutzberger. All rights reserved.
 //
 import Foundation
 import XCTest
-@testable import SwiftyBeaver
+@testable import BlackSheepLogging
 
 class GoogleCloudDestinationTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        SwiftyBeaver.removeAllDestinations()
+        BlackSheepLogging.removeAllDestinations()
     }
 
     override func tearDown() {
@@ -21,7 +21,7 @@ class GoogleCloudDestinationTests: XCTestCase {
     }
 
     func testUseGoogleCloudPDestination() {
-        let log = SwiftyBeaver.self
+        let log = BlackSheepLogging.self
         let gcpDestination = GoogleCloudDestination(serviceName: "TEST")
         gcpDestination.minLevel = .verbose
         XCTAssertTrue(log.addDestination(gcpDestination))
@@ -56,7 +56,7 @@ class GoogleCloudDestinationTests: XCTestCase {
         let function = "TestFunction()"
         let line = 123
 
-        let gcd = GoogleCloudDestination(serviceName: "SwiftyBeaver")
+        let gcd = GoogleCloudDestination(serviceName: "BlackSheepLogging")
 
         let str = gcd.send(.verbose, msg: msg, thread: thread, file: file, function: function, line: line,
                            context: ["user": "Beaver", "httpRequest": ["method": "GET", "responseStatusCode": 200]])
@@ -65,7 +65,7 @@ class GoogleCloudDestinationTests: XCTestCase {
         if let str = str {
             XCTAssertEqual(str.firstChar, "{")
             XCTAssertEqual(str.lastChar, "}")
-            XCTAssertNotNil(str.range(of: "{\"service\":\"SwiftyBeaver\"}"))
+            XCTAssertNotNil(str.range(of: "{\"service\":\"BlackSheepLogging\"}"))
             XCTAssertNotNil(str.range(of: "\"severity\":\"DEBUG\""))
             XCTAssertNotNil(str.range(of: "\"message\":\"test message\\nNewlineäößø\""))
             XCTAssertNotNil(str.range(of: "\"functionName\":\"TestFunction()\""))

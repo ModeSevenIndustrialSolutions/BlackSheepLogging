@@ -162,7 +162,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 - Optional sync after each file write by [@crspybits ](https://github.com/crspybits)
 - Execute methods to run in dest queue by [@keeshux ](https://github.com/keeshux)
-- Padded format option (see [PR for details](https://github.com/SwiftyBeaver/SwiftyBeaver/pull/298)) by [@htb ](https://github.com/htb)
+- Padded format option (see [PR for details](https://github.com/BlackSheepLogging/BlackSheepLogging/pull/298)) by [@htb ](https://github.com/htb)
 
 
 ##### Fixed
@@ -351,7 +351,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ##### Changed
 
-- `Public` is now `Open` in `SwiftyBeaver.swift` by [@skreutzberger](https://github.com/skreutzberger)
+- `Public` is now `Open` in `BlackSheepLogging.swift` by [@skreutzberger](https://github.com/skreutzberger)
 
 <br/>
 
@@ -537,8 +537,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ##### Changed
 
-- Adjusted Xcode Console colors to match SwiftyBeaver Mac App UI by [@DasHutch](https://github.com/DasHutch)
-- Adjusted file destination colors to match SwiftyBeaver Mac App UI by [@skreutzberger](https://github.com/skreutzberger)
+- Adjusted Xcode Console colors to match BlackSheepLogging Mac App UI by [@DasHutch](https://github.com/DasHutch)
+- Adjusted file destination colors to match BlackSheepLogging Mac App UI by [@skreutzberger](https://github.com/skreutzberger)
 
 <br/>
 
@@ -560,8 +560,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ##### Added
 
-- SwiftyBeaver Platform destination by [@skreutzberger](https://github.com/skreutzberger)
-- SwiftyBeaver AES256CBC class for string encryption by [@skreutzberger](https://github.com/skreutzberger)
+- BlackSheepLogging Platform destination by [@skreutzberger](https://github.com/skreutzberger)
+- BlackSheepLogging AES256CBC class for string encryption by [@skreutzberger](https://github.com/skreutzberger)
 - Lots of small improvements by [@skreutzberger](https://github.com/skreutzberger)
 
 <br/>
@@ -662,7 +662,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 - Support for KZLinkedConsole plugin by [@skreutzberger](https://github.com/skreutzberger)
 - Installation via Carthage for tvOS, watchOS & OSX by [@davidrothera](https://github.com/davidrothera)
-- Introduction of API limitation to allowed SwiftyBeaver to be used in Extensions by [@impossibleventures](https://github.com/impossibleventures)
+- Introduction of API limitation to allowed BlackSheepLogging to be used in Extensions by [@impossibleventures](https://github.com/impossibleventures)
 
 
 <br/>

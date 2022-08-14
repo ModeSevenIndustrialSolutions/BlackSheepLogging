@@ -1,22 +1,22 @@
 //
 //  ConsoleDestinationTests.swift
-//  SwiftyBeaver
+//  BlackSheepLogging
 //
 //  Created by Sebastian Kreutzberger on 3/28/17.
 //  Copyright © 2017 Sebastian Kreutzberger. All rights reserved.
 //
 // run tests for this class only:
-// swift test -s SwiftyBeaverTests.ConsoleDestinationTests
+// swift test -s BlackSheepLoggingTests.ConsoleDestinationTests
 
 import Foundation
 import XCTest
-@testable import SwiftyBeaver
+@testable import BlackSheepLogging
 
 class ConsoleDestinationTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        SwiftyBeaver.removeAllDestinations()
+        BlackSheepLogging.removeAllDestinations()
     }
 
     override func tearDown() {
@@ -24,7 +24,7 @@ class ConsoleDestinationTests: XCTestCase {
     }
 
     func testUseTerminalColors() {
-        let log = SwiftyBeaver.self
+        let log = BlackSheepLogging.self
         let console = ConsoleDestination()
         XCTAssertTrue(log.addDestination(console))
 

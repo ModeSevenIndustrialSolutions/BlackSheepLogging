@@ -1,6 +1,6 @@
-<p align="center"><a href="https://swiftybeaver.com"><img src="https://cloud.githubusercontent.com/assets/564725/19889302/73b1ee84-a034-11e6-8753-2d060502397c.jpg" style="width: 888px;" alt="SwiftyBeaver"></a><br/><b>Colorful</b>, flexible, <b>lightweight</b> logging for Swift 3, Swift 4 & <b>Swift 5</b>.<br/>Great for <b>development & release</b> with support for Console, File & cloud platforms.<br/>Log <b>during release</b> to the conveniently built-in SwiftyBeaver Platform, the <b>dedicated Mac App</b> & <b>Elasticsearch</b>!<br/><br/><a href="http://docs.swiftybeaver.com">Docs</a> | <a href="https://swiftybeaver.com">Website</a> | <a href="https://twitter.com/SwiftyBeaver">Twitter</a> | <a href="#privacy">Privacy</a> | <a href="https://github.com/SwiftyBeaver/SwiftyBeaver/blob/master/LICENSE">License</a><br/></p>
+<p align="center"><a href="https://www.modeseven.org"><img src="https://cloud.githubusercontent.com/assets/564725/19889302/73b1ee84-a034-11e6-8753-2d060502397c.jpg" style="width: 888px;" alt="BlackSheepLogging"></a><br/><b>Colorful</b>, flexible, <b>lightweight</b> logging for Swift 3, Swift 4 & <b>Swift 5</b>.<br/>Great for <b>development & release</b> with support for Console, File & cloud platforms.<br/>Log <b>during release</b> to the conveniently built-in BlackSheepLogging Platform, the <b>dedicated Mac App</b> & <b>Elasticsearch</b>!<br/><br/><a href="http://docs.blacksheeplogging.com">Docs</a> | <a href="https://blacksheeplogging.com">Website</a> | <a href="https://twitter.com/BlackSheepLogging">Twitter</a> | <a href="#privacy">Privacy</a> | <a href="https://github.com/BlackSheepLogging/BlackSheepLogging/blob/master/LICENSE">License</a><br/></p>
 
-<p align="center"><a href="https://swift.org" target="_blank"><img src="https://img.shields.io/badge/Language-Swift%203,%204%20&%205-orange.svg" alt="Language Swift 2, 3, 4 & 5"></a> <a href="https://circleci.com/gh/SwiftyBeaver/SwiftyBeaver" target="_blank"><img src="https://circleci.com/gh/SwiftyBeaver/SwiftyBeaver/tree/master.svg?style=shield" alt="CircleCI"/></a><br/><p>
+<p align="center"><a href="https://swift.org" target="_blank"><img src="https://img.shields.io/badge/Language-Swift%203,%204%20&%205-orange.svg" alt="Language Swift 2, 3, 4 & 5"></a> <a href="https://circleci.com/gh/BlackSheepLogging/BlackSheepLogging" target="_blank"><img src="https://circleci.com/gh/BlackSheepLogging/BlackSheepLogging/tree/master.svg?style=shield" alt="CircleCI"/></a><br/><p>
 
 ----
 
@@ -10,7 +10,7 @@
 
 <img src="https://cloud.githubusercontent.com/assets/564725/18608323/ac065a98-7ce6-11e6-8e1b-2a062d54a1d5.png" width="608">
 
-[Learn more](http://docs.swiftybeaver.com/article/9-log-to-xcode-console) about colored logging to Xcode 8 Console with Swift 3, 4 & 5. For Swift 2.3 [use this Gist](https://gist.github.com/skreutzberger/7c396573796473ed1be2c6d15cafed34). **No need to hack Xcode 8 anymore** to get color. You can even customize the log level word (ATTENTION instead of ERROR maybe?), the general amount of displayed data and if you want to use the 💜s or replace them with something else 😉
+[Learn more](http://docs.blacksheeplogging.com/article/9-log-to-xcode-console) about colored logging to Xcode 8 Console with Swift 3, 4 & 5. For Swift 2.3 [use this Gist](https://gist.github.com/skreutzberger/7c396573796473ed1be2c6d15cafed34). **No need to hack Xcode 8 anymore** to get color. You can even customize the log level word (ATTENTION instead of ERROR maybe?), the general amount of displayed data and if you want to use the 💜s or replace them with something else 😉
 
 <br/>
 
@@ -18,25 +18,25 @@
 
 <img src="https://cloud.githubusercontent.com/assets/564725/18608325/b7ecd4c2-7ce6-11e6-829b-7f8f9fe6ef2f.png" width="738">
 
-[Learn more](http://docs.swiftybeaver.com/article/10-log-to-file) about logging to file which is great for Terminal.app fans or to store logs on disk.
+[Learn more](http://docs.blacksheeplogging.com/article/10-log-to-file) about logging to file which is great for Terminal.app fans or to store logs on disk.
 
 <br/>
 
 
-### On Release: Encrypted Logging to SwiftyBeaver Platform
+### On Release: Encrypted Logging to BlackSheepLogging Platform
 
 <img src="https://cloud.githubusercontent.com/assets/564725/14281408/38d6a6ba-fb39-11e5-9584-34e3679bb1c5.jpg" width="700">
 
-[Learn more](http://docs.swiftybeaver.com/article/11-log-to-swiftybeaver-platform) about logging to the SwiftyBeaver Platform **during release!**
+[Learn more](http://docs.blacksheeplogging.com/article/11-log-to-blacksheeplogging-platform) about logging to the BlackSheepLogging Platform **during release!**
 
 <br/>
 
 
 ### Browse, Search & Filter via Mac App
 
-![swiftybeaver-demo1](https://cloud.githubusercontent.com/assets/564725/14846071/218c0646-0c62-11e6-92cb-e6e963b68724.gif)
+![blacksheeplogging-demo1](https://cloud.githubusercontent.com/assets/564725/14846071/218c0646-0c62-11e6-92cb-e6e963b68724.gif)
 
-Conveniently access your logs during development & release with our [free Mac App](https://swiftybeaver.com).
+Conveniently access your logs during development & release with our [free Mac App](https://blacksheeplogging.com).
 
 <br/>
 
@@ -45,13 +45,13 @@ Conveniently access your logs during development & release with our [free Mac Ap
 
 <img src="https://user-images.githubusercontent.com/564725/34486363-dc501aec-efcf-11e7-92b2-1163cca9e7aa.jpg" width="700">
 
-[Learn more](https://swiftybeaver.com/enterprise.html) about **legally compliant**, end-to-end encrypted logging your own cloud with **SwiftyBeaver Enterprise**. Install via Docker or manual, fully-featured free trial included!
+[Learn more](https://blacksheeplogging.com/enterprise.html) about **legally compliant**, end-to-end encrypted logging your own cloud with **BlackSheepLogging Enterprise**. Install via Docker or manual, fully-featured free trial included!
 
 <br/>
 
 ### Google Cloud & More
 
-You can fully customize your log format, turn it into JSON, or create your own destinations. For example our [Google Cloud Destination](https://github.com/SwiftyBeaver/SwiftyBeaver/blob/master/Sources/GoogleCloudDestination.swift) is just another customized logging format which adds the powerful functionality of automatic server-side Swift logging when hosted on Google Cloud Platform.
+You can fully customize your log format, turn it into JSON, or create your own destinations. For example our [Google Cloud Destination](https://github.com/BlackSheepLogging/BlackSheepLogging/blob/master/Sources/GoogleCloudDestination.swift) is just another customized logging format which adds the powerful functionality of automatic server-side Swift logging when hosted on Google Cloud Platform.
 
 <br/>
 
@@ -62,30 +62,30 @@ You can fully customize your log format, turn it into JSON, or create your own d
 
 ## Installation
 
-- For **Swift 4 & 5** install the latest SwiftyBeaver version
-- For **Swift 3** install SwiftyBeaver 1.8.4
-- For **Swift 2** install SwiftyBeaver 0.7.0
+- For **Swift 4 & 5** install the latest BlackSheepLogging version
+- For **Swift 3** install BlackSheepLogging 1.8.4
+- For **Swift 2** install BlackSheepLogging 0.7.0
 
 <br/>
 
 ### Carthage
 
-You can use [Carthage](https://github.com/Carthage/Carthage) to install SwiftyBeaver by adding that to your Cartfile:
+You can use [Carthage](https://github.com/Carthage/Carthage) to install BlackSheepLogging by adding that to your Cartfile:
 
 Swift 4 & 5:
 ``` Swift
-github "SwiftyBeaver/SwiftyBeaver"
+github "BlackSheepLogging/BlackSheepLogging"
 ```
 
 
 Swift 3:
 ``` Swift
-github "SwiftyBeaver/SwiftyBeaver" ~> 1.8.4
+github "BlackSheepLogging/BlackSheepLogging" ~> 1.8.4
 ```
 
 Swift 2:
 ``` Swift
-github "SwiftyBeaver/SwiftyBeaver" ~> 0.7
+github "BlackSheepLogging/BlackSheepLogging" ~> 0.7
 ```
 
 <br/>
@@ -95,7 +95,7 @@ github "SwiftyBeaver/SwiftyBeaver" ~> 0.7
 For [Swift Package Manager](https://swift.org/package-manager/) add the following package to your Package.swift file. Just Swift 4 & 5 are supported:
 
 ``` Swift
-.package(url: "https://github.com/SwiftyBeaver/SwiftyBeaver.git", .upToNextMajor(from: "1.9.0")),
+.package(url: "https://github.com/BlackSheepLogging/BlackSheepLogging.git", .upToNextMajor(from: "1.9.0")),
 ```
 
 <br/>
@@ -106,7 +106,7 @@ To use [CocoaPods](https://cocoapods.org) just add this to your Podfile:
 
 Swift 4 & 5:
 ``` Swift
-pod 'SwiftyBeaver'
+pod 'BlackSheepLogging'
 ```
 
 Swift 3:
@@ -115,7 +115,7 @@ target 'MyProject' do
   use_frameworks!
 
   # Pods for MyProject
-  pod 'SwiftyBeaver', '~> 1.8.4'
+  pod 'BlackSheepLogging', '~> 1.8.4'
 end
 ```
 
@@ -125,7 +125,7 @@ target 'MyProject' do
   use_frameworks!
 
   # Pods for MyProject
-  pod 'SwiftyBeaver', '~> 0.7'
+  pod 'BlackSheepLogging', '~> 0.7'
 end
 
 post_install do |installer|
@@ -141,27 +141,27 @@ end
 
 ## Usage
 
-Add that near the top of your `AppDelegate.swift` to be able to use SwiftyBeaver in your whole project.
+Add that near the top of your `AppDelegate.swift` to be able to use BlackSheepLogging in your whole project.
 
 ``` Swift
-import SwiftyBeaver
-let log = SwiftyBeaver.self
+import BlackSheepLogging
+let log = BlackSheepLogging.self
 
 ```
 
-At the the beginning of your `AppDelegate:didFinishLaunchingWithOptions()` add the SwiftyBeaver log destinations (console, file, etc.), optionally adjust the [log format](http://docs.swiftybeaver.com/article/20-custom-format) and then you can already do the following log level calls globally:
+At the the beginning of your `AppDelegate:didFinishLaunchingWithOptions()` add the BlackSheepLogging log destinations (console, file, etc.), optionally adjust the [log format](http://docs.blacksheeplogging.com/article/20-custom-format) and then you can already do the following log level calls globally:
 
 ``` Swift
 // add log destinations. at least one is needed!
 let console = ConsoleDestination()  // log to Xcode Console
-let file = FileDestination()  // log to default swiftybeaver.log file
+let file = FileDestination()  // log to default blacksheeplogging.log file
 let cloud = SBPlatformDestination(appID: "foo", appSecret: "bar", encryptionKey: "123") // to cloud
 
 // use custom format and set console output to short time, log level & message
 console.format = "$DHH:mm:ss$d $L $M"
 // or use this for JSON output: console.format = "$J"
 
-// add the destinations to SwiftyBeaver
+// add the destinations to BlackSheepLogging
 log.addDestination(console)
 log.addDestination(file)
 log.addDestination(cloud)
@@ -192,17 +192,17 @@ log.info("my data", context: [1, "a", 2]) // "INFO: my data [1, \"a\", 2]"
 
 ## Server-side Swift
 
-We ❤️ server-side Swift 4 & 5 and SwiftyBeaver supports it **out-of-the-box**! Try for yourself and run SwiftyBeaver inside a Ubuntu Docker container. Just install Docker and then go to your the project folder on macOS or Ubuntu and type:
+We ❤️ server-side Swift 4 & 5 and BlackSheepLogging supports it **out-of-the-box**! Try for yourself and run BlackSheepLogging inside a Ubuntu Docker container. Just install Docker and then go to your the project folder on macOS or Ubuntu and type:
 
 ```shell
-# create docker image, build SwiftyBeaver and run unit tests
-docker run --rm -it -v $PWD:/app swiftybeaver /bin/bash -c "cd /app ; swift build ; swift test"
+# create docker image, build BlackSheepLogging and run unit tests
+docker run --rm -it -v $PWD:/app blacksheeplogging /bin/bash -c "cd /app ; swift build ; swift test"
 
 # optionally log into container to run Swift CLI and do more stuff
-docker run --rm -it --privileged=true -v $PWD:/app swiftybeaver
+docker run --rm -it --privileged=true -v $PWD:/app blacksheeplogging
 ```
 
-Best: for the popular server-side Swift web framework [Vapor](https://github.com/vapor/vapor) you can use **[our Vapor logging provider](https://github.com/SwiftyBeaver/SwiftyBeaver-Vapor)** which makes server logging awesome again 🙌
+Best: for the popular server-side Swift web framework [Vapor](https://github.com/vapor/vapor) you can use **[our Vapor logging provider](https://github.com/BlackSheepLogging/BlackSheepLogging-Vapor)** which makes server logging awesome again 🙌
 
 <br/>
 <br/>
@@ -211,44 +211,44 @@ Best: for the popular server-side Swift web framework [Vapor](https://github.com
 
 **Getting Started:**
 
-- [Features](http://docs.swiftybeaver.com/article/7-introduction)
-- [Installation](http://docs.swiftybeaver.com/article/5-installation)
-- [Basic Setup](http://docs.swiftybeaver.com/article/6-basic-setup)
+- [Features](http://docs.blacksheeplogging.com/article/7-introduction)
+- [Installation](http://docs.blacksheeplogging.com/article/5-installation)
+- [Basic Setup](http://docs.blacksheeplogging.com/article/6-basic-setup)
 
 **Logging Destinations:**
 
-- [Colored Logging to Xcode Console](http://docs.swiftybeaver.com/article/9-log-to-xcode-console)
-- [Colored Logging to File](http://docs.swiftybeaver.com/article/10-log-to-file)
-- [Encrypted Logging & Analytics to SwiftyBeaver Platform](http://docs.swiftybeaver.com/article/11-log-to-swiftybeaver-platform)
-- [Encrypted Logging & Analytics to Elasticsearch & Kibana](http://docs.swiftybeaver.com/article/34-enterprise-quick-start-via-docker)
+- [Colored Logging to Xcode Console](http://docs.blacksheeplogging.com/article/9-log-to-xcode-console)
+- [Colored Logging to File](http://docs.blacksheeplogging.com/article/10-log-to-file)
+- [Encrypted Logging & Analytics to BlackSheepLogging Platform](http://docs.blacksheeplogging.com/article/11-log-to-blacksheeplogging-platform)
+- [Encrypted Logging & Analytics to Elasticsearch & Kibana](http://docs.blacksheeplogging.com/article/34-enterprise-quick-start-via-docker)
 
 
 **Advanced Topics:**
 
-- [Custom Format & Context](http://docs.swiftybeaver.com/article/20-custom-format)
-- [Filters](http://docs.swiftybeaver.com/article/21-filters)
+- [Custom Format & Context](http://docs.blacksheeplogging.com/article/20-custom-format)
+- [Filters](http://docs.blacksheeplogging.com/article/21-filters)
 
 **Stay Informed:**
 
-- [Official Website](https://swiftybeaver.com)
-- [On Twitter](https://twitter.com/SwiftyBeaver)
+- [Official Website](https://blacksheeplogging.com)
+- [On Twitter](https://twitter.com/BlackSheepLogging)
 
 <br/>
 <br/>
 
 ## Privacy
 
-**SwiftyBeaver is not collecting any data without you as a developer knowing about it**. That's why it is **open-source** and developed in a simple way to be easy to inspect and check what it is actually doing under the hood.
+**BlackSheepLogging is not collecting any data without you as a developer knowing about it**. That's why it is **open-source** and developed in a simple way to be easy to inspect and check what it is actually doing under the hood.
 
 The only sending to servers is done if you use the `SBPlatformDestination`. That destination is meant for production logging and on default it sends your logs plus additional device information **end-to-end encrypted** to our cloud service. Our cloud service **can not decrypt the data**.
 
 Instead, you install our Mac App and that Mac App downloads the encrypted logs from the cloud and decrypts and shows them to you. Additionally, the Mac App stores all data that it downloads in a local SQLite database file on your computer so that you actually "physically" own your data.
 
-The business model of the SwiftyBeaver cloud service is to provide the most secure logging solution in the market. On purpose we do not provide a web UI for you because it would require us to store your encryption key on our servers.
+The business model of the BlackSheepLogging cloud service is to provide the most secure logging solution in the market. On purpose we do not provide a web UI for you because it would require us to store your encryption key on our servers.
 
 **Only you can see the logging and device data** which is sent from your users' devices. Our servers just see encrypted data and do not know your decryption key.
 
-SwiftyBeaver is **fully GDPR compliant** due to its focus on encryption and transparency in what data is collected and also meets **Apple’s latest requirements** on the privacy of 3rd party frameworks.
+BlackSheepLogging is **fully GDPR compliant** due to its focus on encryption and transparency in what data is collected and also meets **Apple’s latest requirements** on the privacy of 3rd party frameworks.
 
 Our Enterprise offering is an even more secure solution where you are not using anymore our cloud service and Mac App but you send your end-to-end encrypted logs directly to your own servers and you store them in your Elasticsearch cluster. The **Enterprise offering is used by health tech** and governmental institutions which require the highest level of privacy and security.
 
@@ -257,14 +257,14 @@ Our Enterprise offering is an even more secure solution where you are not using 
 
 ## End-to-End Encryption
 
-SwiftyBeaver is using symmetric AES256CBC encryption in the `SBPlatformDestination` destination. No other officially supported destination uses encryption. 
+BlackSheepLogging is using symmetric AES256CBC encryption in the `SBPlatformDestination` destination. No other officially supported destination uses encryption. 
 
-The encryption used in the `SBPlatformDestination` destination is end-to-end. The open-source SwiftyBeaver logging framework symmetrically encrypts all logging data on your client's device inside your app (iPhone, iPad, ...) before it is sent to the SwiftyBeaver Crypto Cloud. The decryption is done on your Mac which has the SwiftyBeaver Mac App installed. All logging data stays encrypted in the SwiftyBeaver Crypto Cloud due to the lack of the password.
+The encryption used in the `SBPlatformDestination` destination is end-to-end. The open-source BlackSheepLogging logging framework symmetrically encrypts all logging data on your client's device inside your app (iPhone, iPad, ...) before it is sent to the BlackSheepLogging Crypto Cloud. The decryption is done on your Mac which has the BlackSheepLogging Mac App installed. All logging data stays encrypted in the BlackSheepLogging Crypto Cloud due to the lack of the password.
 
-You are using the encryption at your own risk. SwiftyBeaver’s authors and contributors do not take over any guarantee about the absence of potential security or cryptopgraphy issues, weaknesses, etc.; please also read the LICENSE file for details. Also if you are interested in cryptography in general, please have a look at the file AES256CBC.swift to learn more about the cryptographical implementation.
+You are using the encryption at your own risk. BlackSheepLogging’s authors and contributors do not take over any guarantee about the absence of potential security or cryptopgraphy issues, weaknesses, etc.; please also read the LICENSE file for details. Also if you are interested in cryptography in general, please have a look at the file AES256CBC.swift to learn more about the cryptographical implementation.
 <br/>
 <br/>
 
 ## License
 
-SwiftyBeaver Framework is released under the [MIT License](https://github.com/SwiftyBeaver/SwiftyBeaver/blob/master/LICENSE).
+BlackSheepLogging Framework is released under the [MIT License](https://github.com/BlackSheepLogging/BlackSheepLogging/blob/master/LICENSE).

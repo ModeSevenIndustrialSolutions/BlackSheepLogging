@@ -1,6 +1,6 @@
 //
 //  Filter.swift
-//  SwiftyBeaver
+//  BlackSheepLogging
 //
 //  Created by Jeff Roberts on 5/31/16.
 //  Copyright © 2015 Sebastian Kreutzberger
@@ -22,7 +22,7 @@ public protocol FilterType : AnyObject {
     func getTarget() -> Filter.TargetType
     func isRequired() -> Bool
     func isExcluded() -> Bool
-    func reachedMinLevel(_ level: SwiftyBeaver.Level) -> Bool
+    func reachedMinLevel(_ level: BlackSheepLogging.Level) -> Bool
 }
 
 /// Filters is syntactic sugar used to easily construct filters
@@ -51,9 +51,9 @@ public class Filter {
 
     let targetType: Filter.TargetType
     let required: Bool
-    let minLevel: SwiftyBeaver.Level
+    let minLevel: BlackSheepLogging.Level
 
-    public init(_ target: Filter.TargetType, required: Bool, minLevel: SwiftyBeaver.Level) {
+    public init(_ target: Filter.TargetType, required: Bool, minLevel: BlackSheepLogging.Level) {
         self.targetType = target
         self.required = required
         self.minLevel = minLevel
@@ -72,7 +72,7 @@ public class Filter {
     }
 
     /// returns true of set minLevel is >= as given level
-    public func reachedMinLevel(_ level: SwiftyBeaver.Level) -> Bool {
+    public func reachedMinLevel(_ level: BlackSheepLogging.Level) -> Bool {
         //print("checking if given level \(level) >= \(minLevel)")
         return level.rawValue >= minLevel.rawValue
     }
@@ -85,7 +85,7 @@ public class CompareFilter: Filter, FilterType {
 
     private var filterComparisonType: Filter.ComparisonType?
 
-    override public init(_ target: Filter.TargetType, required: Bool, minLevel: SwiftyBeaver.Level) {
+    override public init(_ target: Filter.TargetType, required: Bool, minLevel: BlackSheepLogging.Level) {
         super.init(target, required: required, minLevel: minLevel)
 
         let comparisonType: Filter.ComparisonType?
@@ -167,31 +167,31 @@ public class CompareFilter: Filter, FilterType {
 // Syntactic sugar for creating a function comparison filter
 public class FunctionFilterFactory {
     public static func startsWith(_ prefixes: String..., caseSensitive: Bool = false,
-                                  required: Bool = false, minLevel: SwiftyBeaver.Level = .verbose) -> FilterType {
+                                  required: Bool = false, minLevel: BlackSheepLogging.Level = .verbose) -> FilterType {
         return CompareFilter(.Function(.StartsWith(prefixes, caseSensitive)), required: required, minLevel: minLevel)
     }
 
     public static func contains(_ strings: String..., caseSensitive: Bool = false,
-                                required: Bool = false, minLevel: SwiftyBeaver.Level = .verbose) -> FilterType {
+                                required: Bool = false, minLevel: BlackSheepLogging.Level = .verbose) -> FilterType {
         return CompareFilter(.Function(.Contains(strings, caseSensitive)), required: required, minLevel: minLevel)
     }
 
     public static func excludes(_ strings: String..., caseSensitive: Bool = false,
-                                required: Bool = false, minLevel: SwiftyBeaver.Level = .verbose) -> FilterType {
+                                required: Bool = false, minLevel: BlackSheepLogging.Level = .verbose) -> FilterType {
         return CompareFilter(.Function(.Excludes(strings, caseSensitive)), required: required, minLevel: minLevel)
     }
 
     public static func endsWith(_ suffixes: String..., caseSensitive: Bool = false,
-                                required: Bool = false, minLevel: SwiftyBeaver.Level = .verbose) -> FilterType {
+                                required: Bool = false, minLevel: BlackSheepLogging.Level = .verbose) -> FilterType {
         return CompareFilter(.Function(.EndsWith(suffixes, caseSensitive)), required: required, minLevel: minLevel)
     }
 
     public static func equals(_ strings: String..., caseSensitive: Bool = false,
-                              required: Bool = false, minLevel: SwiftyBeaver.Level = .verbose) -> FilterType {
+                              required: Bool = false, minLevel: BlackSheepLogging.Level = .verbose) -> FilterType {
         return CompareFilter(.Function(.Equals(strings, caseSensitive)), required: required, minLevel: minLevel)
     }
 
-    public static func custom(required: Bool = false, minLevel: SwiftyBeaver.Level = .verbose, filterPredicate: @escaping (String) -> Bool) -> FilterType {
+    public static func custom(required: Bool = false, minLevel: BlackSheepLogging.Level = .verbose, filterPredicate: @escaping (String) -> Bool) -> FilterType {
         return CompareFilter(.Function(.Custom(filterPredicate)), required: required, minLevel: minLevel)
     }
 }
@@ -199,31 +199,31 @@ public class FunctionFilterFactory {
 // Syntactic sugar for creating a message comparison filter
 public class MessageFilterFactory {
     public static func startsWith(_ prefixes: String..., caseSensitive: Bool = false,
-                                  required: Bool = false, minLevel: SwiftyBeaver.Level = .verbose) -> FilterType {
+                                  required: Bool = false, minLevel: BlackSheepLogging.Level = .verbose) -> FilterType {
         return CompareFilter(.Message(.StartsWith(prefixes, caseSensitive)), required: required, minLevel: minLevel)
     }
 
     public static func contains(_ strings: String..., caseSensitive: Bool = false,
-                                required: Bool = false, minLevel: SwiftyBeaver.Level = .verbose) -> FilterType {
+                                required: Bool = false, minLevel: BlackSheepLogging.Level = .verbose) -> FilterType {
         return CompareFilter(.Message(.Contains(strings, caseSensitive)), required: required, minLevel: minLevel)
     }
 
     public static func excludes(_ strings: String..., caseSensitive: Bool = false,
-                                required: Bool = false, minLevel: SwiftyBeaver.Level = .verbose) -> FilterType {
+                                required: Bool = false, minLevel: BlackSheepLogging.Level = .verbose) -> FilterType {
         return CompareFilter(.Message(.Excludes(strings, caseSensitive)), required: required, minLevel: minLevel)
     }
 
     public static func endsWith(_ suffixes: String..., caseSensitive: Bool = false,
-                                required: Bool = false, minLevel: SwiftyBeaver.Level = .verbose) -> FilterType {
+                                required: Bool = false, minLevel: BlackSheepLogging.Level = .verbose) -> FilterType {
         return CompareFilter(.Message(.EndsWith(suffixes, caseSensitive)), required: required, minLevel: minLevel)
     }
 
     public static func equals(_ strings: String..., caseSensitive: Bool = false,
-                              required: Bool = false, minLevel: SwiftyBeaver.Level = .verbose) -> FilterType {
+                              required: Bool = false, minLevel: BlackSheepLogging.Level = .verbose) -> FilterType {
         return CompareFilter(.Message(.Equals(strings, caseSensitive)), required: required, minLevel: minLevel)
     }
 
-    public static func custom(required: Bool = false, minLevel: SwiftyBeaver.Level = .verbose, filterPredicate: @escaping (String) -> Bool) -> FilterType {
+    public static func custom(required: Bool = false, minLevel: BlackSheepLogging.Level = .verbose, filterPredicate: @escaping (String) -> Bool) -> FilterType {
         return CompareFilter(.Message(.Custom(filterPredicate)), required: required, minLevel: minLevel)
     }
 }
@@ -231,31 +231,31 @@ public class MessageFilterFactory {
 // Syntactic sugar for creating a path comparison filter
 public class PathFilterFactory {
     public static func startsWith(_ prefixes: String..., caseSensitive: Bool = false,
-                                  required: Bool = false, minLevel: SwiftyBeaver.Level = .verbose) -> FilterType {
+                                  required: Bool = false, minLevel: BlackSheepLogging.Level = .verbose) -> FilterType {
         return CompareFilter(.Path(.StartsWith(prefixes, caseSensitive)), required: required, minLevel: minLevel)
     }
 
     public static func contains(_ strings: String..., caseSensitive: Bool = false,
-                                required: Bool = false, minLevel: SwiftyBeaver.Level = .verbose) -> FilterType {
+                                required: Bool = false, minLevel: BlackSheepLogging.Level = .verbose) -> FilterType {
         return CompareFilter(.Path(.Contains(strings, caseSensitive)), required: required, minLevel: minLevel)
     }
 
     public static func excludes(_ strings: String..., caseSensitive: Bool = false,
-                                required: Bool = false, minLevel: SwiftyBeaver.Level = .verbose) -> FilterType {
+                                required: Bool = false, minLevel: BlackSheepLogging.Level = .verbose) -> FilterType {
         return CompareFilter(.Path(.Excludes(strings, caseSensitive)), required: required, minLevel: minLevel)
     }
 
     public static func endsWith(_ suffixes: String..., caseSensitive: Bool = false,
-                                required: Bool = false, minLevel: SwiftyBeaver.Level = .verbose) -> FilterType {
+                                required: Bool = false, minLevel: BlackSheepLogging.Level = .verbose) -> FilterType {
         return CompareFilter(.Path(.EndsWith(suffixes, caseSensitive)), required: required, minLevel: minLevel)
     }
 
     public static func equals(_ strings: String..., caseSensitive: Bool = false,
-                              required: Bool = false, minLevel: SwiftyBeaver.Level = .verbose) -> FilterType {
+                              required: Bool = false, minLevel: BlackSheepLogging.Level = .verbose) -> FilterType {
         return CompareFilter(.Path(.Equals(strings, caseSensitive)), required: required, minLevel: minLevel)
     }
 
-    public static func custom(required: Bool = false, minLevel: SwiftyBeaver.Level = .verbose, filterPredicate: @escaping (String) -> Bool) -> FilterType {
+    public static func custom(required: Bool = false, minLevel: BlackSheepLogging.Level = .verbose, filterPredicate: @escaping (String) -> Bool) -> FilterType {
         return CompareFilter(.Path(.Custom(filterPredicate)), required: required, minLevel: minLevel)
     }
 }

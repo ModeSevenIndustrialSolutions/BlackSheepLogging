@@ -1,6 +1,6 @@
 //
 //  SBPlatformDestination
-//  SwiftyBeaver
+//  BlackSheepLogging
 //
 //  Created by Sebastian Kreutzberger on 22.01.16.
 //  Copyright © 2016 Sebastian Kreutzberger
@@ -62,7 +62,7 @@ open class SBPlatformDestination: BaseDestination {
     public var showNSLog = false // executes toNSLog statements to debug the class
     public var points = 0
 
-    public var serverURL = URL(string: "https://api.swiftybeaver.com/api/entries/") // optional
+    public var serverURL = URL(string: "https://api.blacksheeplogging.com/api/entries/") // optional
     public var entriesFileURL = URL(fileURLWithPath: "") // not optional
     public var sendingFileURL = URL(fileURLWithPath: "")
     public var analyticsFileURL = URL(fileURLWithPath: "")
@@ -82,7 +82,7 @@ open class SBPlatformDestination: BaseDestination {
 
     /// init platform with default internal filenames
     public init(appID: String, appSecret: String, encryptionKey: String,
-                serverURL: URL? = URL(string: "https://api.swiftybeaver.com/api/entries/"),
+                serverURL: URL? = URL(string: "https://api.blacksheeplogging.com/api/entries/"),
                 entriesFileName: String = "sbplatform_entries.json",
                 sendingfileName: String = "sbplatform_entries_sending.json",
                 analyticsFileName: String = "sbplatform_analytics.json") {
@@ -153,7 +153,7 @@ open class SBPlatformDestination: BaseDestination {
     }
 
     // append to file, each line is a JSON dict
-    override open func send(_ level: SwiftyBeaver.Level, msg: String, thread: String,
+    override open func send(_ level: BlackSheepLogging.Level, msg: String, thread: String,
         file: String, function: String, line: Int, context: Any? = nil) -> String? {
 
         var jsonString: String?
@@ -206,7 +206,7 @@ open class SBPlatformDestination: BaseDestination {
 
     // MARK: Send-to-Server Logic
 
-    /// does a (manual) sending attempt of all unsent log entries to SwiftyBeaver Platform
+    /// does a (manual) sending attempt of all unsent log entries to BlackSheepLogging Platform
     public func sendNow() {
 
         if sendFileExists() {
@@ -267,7 +267,7 @@ open class SBPlatformDestination: BaseDestination {
         }
     }
 
-    /// sends a string to the SwiftyBeaver Platform server, returns ok if status 200 and HTTP status
+    /// sends a string to the BlackSheepLogging Platform server, returns ok if status 200 and HTTP status
     func sendToServerAsync(_ str: String?, complete: @escaping (_ ok: Bool, _ status: Int) -> Void) {
 
         let timeout = 10.0
@@ -356,7 +356,7 @@ open class SBPlatformDestination: BaseDestination {
     }
 
     /// returns sending points based on level
-    func sendingPointsForLevel(_ level: SwiftyBeaver.Level) -> Int {
+    func sendingPointsForLevel(_ level: BlackSheepLogging.Level) -> Int {
 
         switch level {
         case .debug:
@@ -408,7 +408,7 @@ open class SBPlatformDestination: BaseDestination {
             try fileManager.moveItem(at: entriesFileURL, to: sendingFileURL)
             return true
         } catch {
-            toNSLog("SwiftyBeaver Platform Destination could not rename json file.")
+            toNSLog("BlackSheepLogging Platform Destination could not rename json file.")
             return false
         }
     }
@@ -575,7 +575,7 @@ open class SBPlatformDestination: BaseDestination {
                                     options: .mutableContainers) as? [String: Any]
             }
         } catch {
-            toNSLog("SwiftyBeaver Platform Destination could not read file \(url)")
+            toNSLog("BlackSheepLogging Platform Destination could not read file \(url)")
         }
         return nil
     }

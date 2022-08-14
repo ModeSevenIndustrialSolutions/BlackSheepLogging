@@ -4,13 +4,13 @@
 import PackageDescription
 
 let package = Package(
-    name: "SwiftyBeaver",
+    name: "BlackSheepLogging",
     products: [
-        .library(name: "SwiftyBeaver", targets: ["SwiftyBeaver"])
+        .library(name: "BlackSheepLogging", targets: ["BlackSheepLogging"])
     ],
     targets: [
-        .target(name: "SwiftyBeaver", path: "Sources"),
-        .testTarget(name: "SwiftyBeaverTests", dependencies: ["SwiftyBeaver"]),
+        .target(name: "BlackSheepLogging", path: "Sources"),
+        .testTarget(name: "BlackSheepLoggingTests", dependencies: ["BlackSheepLogging"]),
     ],
     swiftLanguageVersions: [.v5]
 )

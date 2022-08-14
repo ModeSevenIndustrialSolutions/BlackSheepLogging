@@ -3,19 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		"SwiftyBeaver::SwiftyBeaverPackageTests::ProductTarget" /* SwiftyBeaverPackageTests */ = {
+		"SwiftyBeaver::SwiftyBeaverPackageTests::ProductTarget" /* BlackSheepLoggingPackageTests */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_64 /* Build configuration list for PBXAggregateTarget "SwiftyBeaverPackageTests" */;
+			buildConfigurationList = OBJ_64 /* Build configuration list for PBXAggregateTarget "BlackSheepLoggingPackageTests" */;
 			buildPhases = (
 			);
 			dependencies = (
 				OBJ_67 /* PBXTargetDependency */,
 			);
-			name = SwiftyBeaverPackageTests;
+			name = BlackSheepLoggingPackageTests;
 			productName = SwiftyBeaverPackageTests;
 		};
 /* End PBXAggregateTarget section */
@@ -31,7 +31,7 @@
 		OBJ_52 /* FilterValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* FilterValidator.swift */; };
 		OBJ_53 /* GoogleCloudDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* GoogleCloudDestination.swift */; };
 		OBJ_54 /* SBPlatformDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* SBPlatformDestination.swift */; };
-		OBJ_55 /* SwiftyBeaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* SwiftyBeaver.swift */; };
+		OBJ_55 /* BlackSheepLogging.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* BlackSheepLogging.swift */; };
 		OBJ_62 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_73 /* AES256CBCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* AES256CBCTests.swift */; };
 		OBJ_74 /* BaseDestinationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* BaseDestinationTests.swift */; };
@@ -42,8 +42,8 @@
 		OBJ_79 /* GoogleCloudDestinationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* GoogleCloudDestinationTests.swift */; };
 		OBJ_80 /* SBPlatformDestinationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* SBPlatformDestinationTests.swift */; };
 		OBJ_81 /* SecretsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* SecretsExample.swift */; };
-		OBJ_82 /* SwiftyBeaverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* SwiftyBeaverTests.swift */; };
-		OBJ_84 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftyBeaver::SwiftyBeaver::Product" /* SwiftyBeaver.framework */; };
+		OBJ_82 /* BlackSheepLoggingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* BlackSheepLoggingTests.swift */; };
+		OBJ_84 /* BlackSheepLogging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftyBeaver::SwiftyBeaver::Product" /* BlackSheepLogging.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +72,7 @@
 		OBJ_15 /* FilterValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterValidator.swift; sourceTree = "<group>"; };
 		OBJ_16 /* GoogleCloudDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleCloudDestination.swift; sourceTree = "<group>"; };
 		OBJ_17 /* SBPlatformDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBPlatformDestination.swift; sourceTree = "<group>"; };
-		OBJ_18 /* SwiftyBeaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyBeaver.swift; sourceTree = "<group>"; };
+		OBJ_18 /* BlackSheepLogging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackSheepLogging.swift; sourceTree = "<group>"; };
 		OBJ_21 /* AES256CBCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256CBCTests.swift; sourceTree = "<group>"; };
 		OBJ_22 /* BaseDestinationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDestinationTests.swift; sourceTree = "<group>"; };
 		OBJ_23 /* ConsoleDestinationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleDestinationTests.swift; sourceTree = "<group>"; };
@@ -82,18 +82,18 @@
 		OBJ_27 /* GoogleCloudDestinationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleCloudDestinationTests.swift; sourceTree = "<group>"; };
 		OBJ_28 /* SBPlatformDestinationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBPlatformDestinationTests.swift; sourceTree = "<group>"; };
 		OBJ_29 /* SecretsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretsExample.swift; sourceTree = "<group>"; };
-		OBJ_30 /* SwiftyBeaverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyBeaverTests.swift; sourceTree = "<group>"; };
+		OBJ_30 /* BlackSheepLoggingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackSheepLoggingTests.swift; sourceTree = "<group>"; };
 		OBJ_34 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		OBJ_35 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		OBJ_36 /* Dockerfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Dockerfile; sourceTree = "<group>"; };
 		OBJ_37 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		OBJ_38 /* test_in_docker.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = test_in_docker.sh; sourceTree = "<group>"; };
-		OBJ_39 /* SwiftyBeaver.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SwiftyBeaver.podspec; sourceTree = "<group>"; };
+		OBJ_39 /* BlackSheepLogging.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = BlackSheepLogging.podspec; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_8 /* AES256CBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256CBC.swift; sourceTree = "<group>"; };
 		OBJ_9 /* Base64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base64.swift; sourceTree = "<group>"; };
-		"SwiftyBeaver::SwiftyBeaver::Product" /* SwiftyBeaver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyBeaver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"SwiftyBeaver::SwiftyBeaverTests::Product" /* SwiftyBeaverTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwiftyBeaverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"SwiftyBeaver::SwiftyBeaver::Product" /* BlackSheepLogging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BlackSheepLogging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"SwiftyBeaver::SwiftyBeaverTests::Product" /* BlackSheepLoggingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = BlackSheepLoggingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_84 /* SwiftyBeaver.framework in Frameworks */,
+				OBJ_84 /* BlackSheepLogging.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,12 +118,12 @@
 		OBJ_19 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_20 /* SwiftyBeaverTests */,
+				OBJ_20 /* BlackSheepLoggingTests */,
 			);
 			name = Tests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_20 /* SwiftyBeaverTests */ = {
+		OBJ_20 /* BlackSheepLoggingTests */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_21 /* AES256CBCTests.swift */,
@@ -135,17 +135,17 @@
 				OBJ_27 /* GoogleCloudDestinationTests.swift */,
 				OBJ_28 /* SBPlatformDestinationTests.swift */,
 				OBJ_29 /* SecretsExample.swift */,
-				OBJ_30 /* SwiftyBeaverTests.swift */,
+				OBJ_30 /* BlackSheepLoggingTests.swift */,
 			);
-			name = SwiftyBeaverTests;
-			path = Tests/SwiftyBeaverTests;
+			name = BlackSheepLoggingTests;
+			path = Tests/BlackSheepLoggingTests;
 			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_31 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				"SwiftyBeaver::SwiftyBeaverTests::Product" /* SwiftyBeaverTests.xctest */,
-				"SwiftyBeaver::SwiftyBeaver::Product" /* SwiftyBeaver.framework */,
+				"SwiftyBeaver::SwiftyBeaverTests::Product" /* BlackSheepLoggingTests.xctest */,
+				"SwiftyBeaver::SwiftyBeaver::Product" /* BlackSheepLogging.framework */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -162,7 +162,7 @@
 				OBJ_36 /* Dockerfile */,
 				OBJ_37 /* README.md */,
 				OBJ_38 /* test_in_docker.sh */,
-				OBJ_39 /* SwiftyBeaver.podspec */,
+				OBJ_39 /* BlackSheepLogging.podspec */,
 			);
 			sourceTree = "<group>";
 		};
@@ -179,7 +179,7 @@
 				OBJ_15 /* FilterValidator.swift */,
 				OBJ_16 /* GoogleCloudDestination.swift */,
 				OBJ_17 /* SBPlatformDestination.swift */,
-				OBJ_18 /* SwiftyBeaver.swift */,
+				OBJ_18 /* BlackSheepLogging.swift */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -187,9 +187,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		"SwiftyBeaver::SwiftPMPackageDescription" /* SwiftyBeaverPackageDescription */ = {
+		"SwiftyBeaver::SwiftPMPackageDescription" /* BlackSheepLoggingPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_58 /* Build configuration list for PBXNativeTarget "SwiftyBeaverPackageDescription" */;
+			buildConfigurationList = OBJ_58 /* Build configuration list for PBXNativeTarget "BlackSheepLoggingPackageDescription" */;
 			buildPhases = (
 				OBJ_61 /* Sources */,
 			);
@@ -197,13 +197,13 @@
 			);
 			dependencies = (
 			);
-			name = SwiftyBeaverPackageDescription;
+			name = BlackSheepLoggingPackageDescription;
 			productName = SwiftyBeaverPackageDescription;
 			productType = "com.apple.product-type.framework";
 		};
-		"SwiftyBeaver::SwiftyBeaver" /* SwiftyBeaver */ = {
+		"SwiftyBeaver::SwiftyBeaver" /* BlackSheepLogging */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_41 /* Build configuration list for PBXNativeTarget "SwiftyBeaver" */;
+			buildConfigurationList = OBJ_41 /* Build configuration list for PBXNativeTarget "BlackSheepLogging" */;
 			buildPhases = (
 				OBJ_44 /* Sources */,
 				OBJ_56 /* Frameworks */,
@@ -212,14 +212,14 @@
 			);
 			dependencies = (
 			);
-			name = SwiftyBeaver;
+			name = BlackSheepLogging;
 			productName = SwiftyBeaver;
-			productReference = "SwiftyBeaver::SwiftyBeaver::Product" /* SwiftyBeaver.framework */;
+			productReference = "SwiftyBeaver::SwiftyBeaver::Product" /* BlackSheepLogging.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		"SwiftyBeaver::SwiftyBeaverTests" /* SwiftyBeaverTests */ = {
+		"SwiftyBeaver::SwiftyBeaverTests" /* BlackSheepLoggingTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_69 /* Build configuration list for PBXNativeTarget "SwiftyBeaverTests" */;
+			buildConfigurationList = OBJ_69 /* Build configuration list for PBXNativeTarget "BlackSheepLoggingTests" */;
 			buildPhases = (
 				OBJ_72 /* Sources */,
 				OBJ_83 /* Frameworks */,
@@ -229,9 +229,9 @@
 			dependencies = (
 				OBJ_85 /* PBXTargetDependency */,
 			);
-			name = SwiftyBeaverTests;
+			name = BlackSheepLoggingTests;
 			productName = SwiftyBeaverTests;
-			productReference = "SwiftyBeaver::SwiftyBeaverTests::Product" /* SwiftyBeaverTests.xctest */;
+			productReference = "SwiftyBeaver::SwiftyBeaverTests::Product" /* BlackSheepLoggingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -243,8 +243,8 @@
 				LastSwiftMigration = 9999;
 				LastUpgradeCheck = 9999;
 			};
-			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "SwiftyBeaver" */;
-			compatibilityVersion = "Xcode 3.2";
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "BlackSheepLogging" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -255,10 +255,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				"SwiftyBeaver::SwiftyBeaver" /* SwiftyBeaver */,
-				"SwiftyBeaver::SwiftPMPackageDescription" /* SwiftyBeaverPackageDescription */,
-				"SwiftyBeaver::SwiftyBeaverPackageTests::ProductTarget" /* SwiftyBeaverPackageTests */,
-				"SwiftyBeaver::SwiftyBeaverTests" /* SwiftyBeaverTests */,
+				"SwiftyBeaver::SwiftyBeaver" /* BlackSheepLogging */,
+				"SwiftyBeaver::SwiftPMPackageDescription" /* BlackSheepLoggingPackageDescription */,
+				"SwiftyBeaver::SwiftyBeaverPackageTests::ProductTarget" /* BlackSheepLoggingPackageTests */,
+				"SwiftyBeaver::SwiftyBeaverTests" /* BlackSheepLoggingTests */,
 			);
 		};
 /* End PBXProject section */
@@ -278,7 +278,7 @@
 				OBJ_52 /* FilterValidator.swift in Sources */,
 				OBJ_53 /* GoogleCloudDestination.swift in Sources */,
 				OBJ_54 /* SBPlatformDestination.swift in Sources */,
-				OBJ_55 /* SwiftyBeaver.swift in Sources */,
+				OBJ_55 /* BlackSheepLogging.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +303,7 @@
 				OBJ_79 /* GoogleCloudDestinationTests.swift in Sources */,
 				OBJ_80 /* SBPlatformDestinationTests.swift in Sources */,
 				OBJ_81 /* SecretsExample.swift in Sources */,
-				OBJ_82 /* SwiftyBeaverTests.swift in Sources */,
+				OBJ_82 /* BlackSheepLoggingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,12 +312,12 @@
 /* Begin PBXTargetDependency section */
 		OBJ_67 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = "SwiftyBeaver::SwiftyBeaverTests" /* SwiftyBeaverTests */;
+			target = "SwiftyBeaver::SwiftyBeaverTests" /* BlackSheepLoggingTests */;
 			targetProxy = 4DA3E2F2233F2D4D006A7285 /* PBXContainerItemProxy */;
 		};
 		OBJ_85 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = "SwiftyBeaver::SwiftyBeaver" /* SwiftyBeaver */;
+			target = "SwiftyBeaver::SwiftyBeaver" /* BlackSheepLogging */;
 			targetProxy = 4DA3E2F1233F2D4C006A7285 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -369,7 +369,8 @@
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				USE_HEADERMAP = NO;
 			};
 			name = Release;
@@ -392,7 +393,7 @@
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.9.2;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -403,7 +404,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
-				TARGET_NAME = SwiftyBeaver;
+				TARGET_NAME = BlackSheepLogging;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -427,7 +428,7 @@
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.9.2;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -438,7 +439,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
-				TARGET_NAME = SwiftyBeaver;
+				TARGET_NAME = BlackSheepLogging;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -449,6 +450,7 @@
 			buildSettings = {
 				LD = /usr/bin/true;
 				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5";
+				PRODUCT_NAME = BlackSheepLoggingPackageDescription;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -458,6 +460,7 @@
 			buildSettings = {
 				LD = /usr/bin/true;
 				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5";
+				PRODUCT_NAME = BlackSheepLoggingPackageDescription;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -465,12 +468,14 @@
 		OBJ_65 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				PRODUCT_NAME = BlackSheepLoggingPackageTests;
 			};
 			name = Debug;
 		};
 		OBJ_66 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				PRODUCT_NAME = BlackSheepLoggingPackageTests;
 			};
 			name = Release;
 		};
@@ -486,11 +491,16 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = SwiftyBeaver.xcodeproj/SwiftyBeaverTests_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_NAME = BlackSheepLoggingTests;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = SwiftyBeaverTests;
@@ -511,11 +521,16 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = SwiftyBeaver.xcodeproj/SwiftyBeaverTests_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_NAME = BlackSheepLoggingTests;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = SwiftyBeaverTests;
@@ -527,7 +542,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		OBJ_2 /* Build configuration list for PBXProject "SwiftyBeaver" */ = {
+		OBJ_2 /* Build configuration list for PBXProject "BlackSheepLogging" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_3 /* Debug */,
@@ -536,7 +551,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_41 /* Build configuration list for PBXNativeTarget "SwiftyBeaver" */ = {
+		OBJ_41 /* Build configuration list for PBXNativeTarget "BlackSheepLogging" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_42 /* Debug */,
@@ -545,7 +560,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_58 /* Build configuration list for PBXNativeTarget "SwiftyBeaverPackageDescription" */ = {
+		OBJ_58 /* Build configuration list for PBXNativeTarget "BlackSheepLoggingPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_59 /* Debug */,
@@ -554,7 +569,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_64 /* Build configuration list for PBXAggregateTarget "SwiftyBeaverPackageTests" */ = {
+		OBJ_64 /* Build configuration list for PBXAggregateTarget "BlackSheepLoggingPackageTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_65 /* Debug */,
@@ -563,7 +578,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_69 /* Build configuration list for PBXNativeTarget "SwiftyBeaverTests" */ = {
+		OBJ_69 /* Build configuration list for PBXNativeTarget "BlackSheepLoggingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_70 /* Debug */,

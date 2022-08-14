@@ -1,6 +1,6 @@
 //
 //  FileDestinationTests.swift
-//  SwiftyBeaver
+//  BlackSheepLogging
 //
 //  Created by Sebastian Kreutzberger on 6/21/16.
 //  Copyright © 2016 Sebastian Kreutzberger. All rights reserved.
@@ -8,13 +8,13 @@
 
 import Foundation
 import XCTest
-@testable import SwiftyBeaver
+@testable import BlackSheepLogging
 
 class FileDestinationTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        SwiftyBeaver.removeAllDestinations()
+        BlackSheepLogging.removeAllDestinations()
     }
 
     override func tearDown() {
@@ -22,7 +22,7 @@ class FileDestinationTests: XCTestCase {
     }
 
     func testFileIsWritten() {
-        let log = SwiftyBeaver.self
+        let log = BlackSheepLogging.self
 
         let path = "/tmp/testSBF.log"
         deleteFile(path: path)
@@ -58,7 +58,7 @@ class FileDestinationTests: XCTestCase {
     }
 
     func testFileIsWrittenToFolderWithSpaces() {
-        let log = SwiftyBeaver.self
+        let log = BlackSheepLogging.self
 
         let folder = "/tmp/folder with spaces"
         createFolder(path: folder)
@@ -101,7 +101,7 @@ class FileDestinationTests: XCTestCase {
     }
     
     func testFileIsWrittenToDeletedFolder() {
-        let log = SwiftyBeaver.self
+        let log = BlackSheepLogging.self
         
         let path = "/tmp/\(UUID().uuidString)/testSBF.log"
         deleteFile(path: path)
